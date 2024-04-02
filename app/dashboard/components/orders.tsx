@@ -88,9 +88,9 @@ const Orders = () => {
               $ {invoice.totalAmount.toFixed(2)}
             </TableCell>
             <TableCell className="text-right">
-              <Button>
-                <Link href={`/dashboard/${invoice.orderID}`}>View</Link>
-              </Button>
+              <Link href={`/dashboard/${invoice.orderID}`}>
+                <Button>View</Button>
+              </Link>
             </TableCell>
           </TableRow>
         ))}

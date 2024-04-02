@@ -11,8 +11,8 @@ import Orders from './components/orders'
 
 const DashBoardPage = () => {
   return (
-    <>
-      <div className="grid grid-cols-2 gap-4">
+    <div className="relative w-full">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <Card>
           <CardHeader>
             <CardTitle>Monthly</CardTitle>
@@ -30,8 +30,8 @@ const DashBoardPage = () => {
           </CardContent>
         </Card>
       </div>
-      <div className="mt-4 table">
-        <Card>
+      <div className="relative mt-4 overflow-scroll">
+        <Card className="relative min-w-[500px]">
           <CardHeader>
             <CardTitle>Orders tracker</CardTitle>
           </CardHeader>
@@ -40,7 +40,7 @@ const DashBoardPage = () => {
           </CardContent>
         </Card>
       </div>
-    </>
+    </div>
   )
 }
 
